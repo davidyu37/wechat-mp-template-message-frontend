@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class="container">
+  <form bindsubmit="formSubmit" report-submit>
+    <button form-type="submit">Submit</button>
+  </form>
+</view>
