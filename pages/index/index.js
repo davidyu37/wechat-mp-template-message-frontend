@@ -8,27 +8,13 @@ Page({
   },
   onLoad: function () {
   },
-  formSubmit(e) {
-    const { formId } = e.detail;
-    console.log(formId);
-    console.log(app.globalData);
-    wx.request({
-      url: `http://192.168.1.102:3000/send-message`,
-      method: 'POST',
-      header: {
-        'content-type': 'application/json' // 默认值
-      },
-      data: {
-        form_id: formId,
-        touser: app.globalData.openid
-      },
+  requestPermission(e) {
+    console.log('tap')
+    wx.requestSubscribeMessage({
+      tmplIds: ['7vpdow8iyZ_m8py6-xNmPKbaGUoGDc5KmKbHKVD0myY'],
       success(res) {
-        wx.showToast({
-          title: '成功',
-          icon: 'success',
-          duration: 2000
-        })
+        console.log(res);
       }
-    });
+    })
   },
 })

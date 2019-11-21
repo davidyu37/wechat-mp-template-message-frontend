@@ -12,13 +12,15 @@
 		"autoAudits": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.6.2",
-	"appid": "",
+	"libVersion": "2.9.3",
+	"appid": "wx01835dedff13a4dc",
 	"projectname": "TemplateMessage",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
 	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,
